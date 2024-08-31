@@ -41,13 +41,14 @@ const UserLogin = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const staticUser = { email: 'user@example.com', password: 'password' };
+    const staticUser = { email: 'ranakamal@gmail.com', password: 'Kamal@123' };
 
     if (formData.email === staticUser.email && formData.password === staticUser.password) {
       console.log('User logged in successfully:', formData);
       navigate('/profile');
     } else {
       console.error('Login error: Invalid credentials');
+      alert('Invalid credentials!');
     }
   };
 

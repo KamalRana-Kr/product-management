@@ -52,6 +52,7 @@ const AdminLogin = () => {
       navigate('/admin/panel');
     } else {
       console.error('Admin login error: Invalid credentials');
+      alert('Invalid credentials!');
     }
   };
 

@@ -54,7 +54,10 @@ import React, { useState,useEffect } from 'react';
 import axios from 'axios';
 
 const UserProfile = () => {
-  const [profile, setProfile] = useState({});
+  const [profile, setProfile] = useState({
+    username:"Rana Kamal",
+    email :"ranakamal@gmail.com"
+  });
   const [image, setImage] = useState(null);
 
   const fetchProfile = async () => {
